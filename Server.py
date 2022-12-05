@@ -1,4 +1,5 @@
 import os
+import paramiko
 
 class Server:
     
@@ -28,3 +29,14 @@ class Server:
         else:
             print("Check the server - Unsuccessfull ping response for ", self.server_ip)
             print(f.read())v
+
+
+class Server:
+    """ Server class for representing and manipulating servers. """
+    def __init__(self, server_ip, key_file, username, upgrade_command):
+        # TODO -
+        self.server_ip = server_ip
+        self.username = username
+        self.command = upgrade_command
+        self.key_file = key_file
+        
